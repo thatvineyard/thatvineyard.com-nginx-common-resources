@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error</title>
+    <link rel="stylesheet" href="/errors/style.css" />
+    <script src="/errors/set-status-code.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setErrorPage('error-code', 'error-message');
+        });          
+    </script>
+  </head>
+  <body>
+    <img src="/errors/wlogo.png" alt="Logo" class="logo" />
+    <h1 id="error-code">Error</h1>
+    <p id="error-message">Something went wrong.</p>
+  </body>
+</html>
